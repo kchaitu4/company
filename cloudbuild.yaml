@@ -25,8 +25,8 @@ steps:
   - 'image'
   - 'deployment/${_DEPLOYMENTNAME}'
   # - 'namespace/${_NAMESPACE}'
-  - '${_CONTAINERNAME}=gcr.io/kubernetes-283707/testapp'
-  # - '${_CONTAINERNAME}=gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
+  # - '${_CONTAINERNAME}=gcr.io/kubernetes-283707/testapp'
+  - '${_CONTAINERNAME}=gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
   # - 'gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
@@ -40,7 +40,7 @@ substitutions:
     
     #Repository Specific configuration. DevOps can change this settings
     _DEPLOYMENTNAME: testapp
-    _CONTAINERNAME: testapp
+    _CONTAINERNAME: company
     _REPO_NAME: company
     # _NAMESPACE: conpmany-namespace
     
