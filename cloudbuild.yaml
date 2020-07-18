@@ -24,10 +24,8 @@ steps:
   - 'set'
   - 'image'
   - 'deployment/${_DEPLOYMENTNAME}'
-  - 'namespace/${_NAMESPACE}'
-  # - '${_CONTAINERNAME}=gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
-  # - '<app-name>=gcr.io/$PROJECT_ID/<app-name>:$TAG_NAME'
-  - 'app=gcr.io/$${_PROJECT}/app'
+  # - 'namespace/${_NAMESPACE}'
+  - '${_CONTAINERNAME}=gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
   - 'CLOUDSDK_CONTAINER_CLUSTER=${_GKE_CLUSTER}'
@@ -42,7 +40,7 @@ substitutions:
     _DEPLOYMENTNAME: app
     _CONTAINERNAME: app
     _REPO_NAME: company
-    _NAMESPACE: conpmany-namespace
+    # _NAMESPACE: conpmany-namespace
     
     # Developers ONLY change
     _VERSION: v1.0
