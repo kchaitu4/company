@@ -6,7 +6,7 @@ steps:
 
 # Clone a public repo and write its revision to a VERSION file.
 - name: 'gcr.io/$PROJECT_ID/git'
-  args: ['clone', 'https://github.com/GoogleCloudPlatform/cloud-builders.git']
+  args: ['clone', 'https://github.com/kchaitu4/company.git']
 
 
 #Build the image 
