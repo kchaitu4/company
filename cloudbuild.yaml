@@ -45,7 +45,7 @@ substitutions:
     # _NAMESPACE: conpmany-namespace
     
     # Developers ONLY change
-    _VERSION: v1.1
+    _VERSION: v1.2
     
 options:
     substitution_option: 'ALLOW_LOOSE'
