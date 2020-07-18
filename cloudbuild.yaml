@@ -37,7 +37,7 @@ substitutions:
     
     #Repository Specific configuration. DevOps can change this settings
     _DEPLOYMENTNAME: app
-    _CONTAINERNAME: app  
+    _CONTAINERNAME: app
     _REPO_NAME: company
     
     # Developers ONLY change
