@@ -39,7 +39,7 @@ substitutions:
     #Repository Specific configuration. DevOps can change this settings
     _DEPLOYMENTNAME: app
     _CONTAINERNAME: app
-    _REPO_NAME: company
+    _REPO_NAME: github.com/kchaitu4/company
     _NAMESPACE: conpmany-namespace
     
     # Developers ONLY change
