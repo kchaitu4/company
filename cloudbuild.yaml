@@ -37,7 +37,7 @@ substitutions:
     #Repository Specific configuration. DevOps can change this settings
     _DEPLOYMENTNAME: app
     _CONTAINERNAME: app  
-    _REPO_NAME: company
+    _REPO_NAME: gcr.io/kubernetes-283707/github.com/kchaitu4/company
     
     # Developers ONLY change
     _VERSION: v1.2
