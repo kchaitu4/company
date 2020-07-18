@@ -25,7 +25,9 @@ steps:
   - 'image'
   - 'deployment/${_DEPLOYMENTNAME}'
   - 'namespace/${_NAMESPACE}'
-  - '${_CONTAINERNAME}=gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
+  # - '${_CONTAINERNAME}=gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
+  # - '<app-name>=gcr.io/$PROJECT_ID/<app-name>:$TAG_NAME'
+  - 'app=gcr.io/$${_PROJECT}/app'
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
   - 'CLOUDSDK_CONTAINER_CLUSTER=${_GKE_CLUSTER}'
