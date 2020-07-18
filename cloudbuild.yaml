@@ -24,7 +24,7 @@ steps:
   - 'set'
   - 'image'
   - 'deployment/${_DEPLOYMENTNAME}'
-  # - 'namespace/${_NAMESPACE}'
+  - 'namespace/${_NAMESPACE}'
   - '${_CONTAINERNAME}=gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
@@ -37,10 +37,10 @@ substitutions:
     _GKE_CLUSTER: company-cluster-1
     
     #Repository Specific configuration. DevOps can change this settings
-    _DEPLOYMENTNAME: test-app
-    _CONTAINERNAME: test-app
+    _DEPLOYMENTNAME: app
+    _CONTAINERNAME: app
     _REPO_NAME: company
-    # _NAMESPACE: conpmany-namespace
+    _NAMESPACE: conpmany-namespace
     
     # Developers ONLY change
     _VERSION: v1.0
