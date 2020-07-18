@@ -36,7 +36,7 @@ substitutions:
     _GKE_CLUSTER: company-cluster-1
     
     #Repository Specific configuration. DevOps can change this settings
-    _DEPLOYMENTNAME: app
+    _DEPLOYMENTNAME:  app-8glr5
     _CONTAINERNAME: app
     _REPO_NAME: company
     
