@@ -6,7 +6,8 @@ steps:
 
 # # Clone a public repo and write its revision to a VERSION file.
 - name: 'gcr.io/$PROJECT_ID/git'
-  args: ['clone', 'https://github.com/kchaitu4/company.git']
+  # args: ['clone', 'https://github.com/kchaitu4/company.git']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/github.com/kchaitu4/company.git', '.']
 
 
 #Build the image 
@@ -40,7 +41,7 @@ substitutions:
     _REPO_NAME: github.com/kchaitu4/company
     
     # Developers ONLY change
-    _VERSION: v1.2
+    _VERSION: v1.0
     
 options:
     substitution_option: 'ALLOW_LOOSE'
