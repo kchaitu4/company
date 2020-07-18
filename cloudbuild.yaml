@@ -30,14 +30,14 @@ steps:
   
 substitutions:
     #GCP Specific configuration. Please DON'T change anything
-    _PROJECT: kubernetes
+    _PROJECT: kubernetes-283707
     _ZONE: us-central1-a
     _GKE_CLUSTER: company-cluster-1
     
     #Repository Specific configuration. DevOps can change this settings
     _DEPLOYMENTNAME: app
     _CONTAINERNAME: app  
-    _REPO_NAME: gcr.io/kubernetes-283707/github.com/kchaitu4/company
+    _REPO_NAME: github.com/kchaitu4/company
     
     # Developers ONLY change
     _VERSION: v1.2
