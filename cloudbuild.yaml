@@ -37,7 +37,7 @@ substitutions:
     # _NAMESPACE: conpmany-namespace ::: can be used incase the deployed app is not in default namespace
     
     # ONLY Plase for Developers to make changes in this file each time they do a deployment
-    _VERSION: v1.3
+    _VERSION: v1.4
     
 options:
     substitution_option: 'ALLOW_LOOSE'
